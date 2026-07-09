@@ -1,0 +1,13 @@
+def grade_score(score):
+    if score >=70:
+        return "A"
+    elif score >=60:
+        return "B"
+    elif score >=50:
+        return "C"
+    else: 
+      return "Fail"
+
+print(grade_score(75))
+print(grade_score(55))
+print(grade_score(30))
