@@ -64,12 +64,6 @@ Order matters, delete in this sequence:
 
 Deleting in this order avoids dependency errors (you can't delete a Launch Template that's still referenced by an active ASG, for example).
 
-## Screenshots
 
-*(Insert 1-2 screenshots of the trickiest parts here, e.g. the healthy/unhealthy status flip, or the launch template user data field)*
 
-## Extra: Database + Autoscaling Together (if time allows)
 
-*(Only fill in if attempted)*
-
-Only one DB VM is used, since the database itself isn't autoscaled, only the app tier is. The difference from earlier deployments: the app-side user data needs the `MONGODB_URI` and `STATEFUL_MODE` exports added back in, but the DB VM itself stays as a single fixed instance outside the ASG entirely.
